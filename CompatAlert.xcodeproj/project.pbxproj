@@ -13,6 +13,7 @@
 		CEC0F1811C3C091D00F54C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC0F1801C3C091D00F54C3B /* Assets.xcassets */; };
 		CEC0F1841C3C091D00F54C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC0F1821C3C091D00F54C3B /* LaunchScreen.storyboard */; };
 		CEC0F18F1C3C091D00F54C3B /* CompatAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0F18E1C3C091D00F54C3B /* CompatAlertTests.swift */; };
+		CEC0F19B1C3C097600F54C3B /* CompatAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0F19A1C3C097600F54C3B /* CompatAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CEC0F18A1C3C091D00F54C3B /* CompatAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompatAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0F18E1C3C091D00F54C3B /* CompatAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatAlertTests.swift; sourceTree = "<group>"; };
 		CEC0F1901C3C091D00F54C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC0F19A1C3C097600F54C3B /* CompatAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompatAlert.swift; path = Classes/CompatAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		CEC0F1781C3C091D00F54C3B /* CompatAlert */ = {
 			isa = PBXGroup;
 			children = (
+				CEC0F1991C3C096000F54C3B /* Classes */,
 				CEC0F1791C3C091D00F54C3B /* AppDelegate.swift */,
 				CEC0F17B1C3C091D00F54C3B /* ViewController.swift */,
 				CEC0F17D1C3C091D00F54C3B /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				CEC0F1901C3C091D00F54C3B /* Info.plist */,
 			);
 			path = CompatAlertTests;
+			sourceTree = "<group>";
+		};
+		CEC0F1991C3C096000F54C3B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0F19A1C3C097600F54C3B /* CompatAlert.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC0F17C1C3C091D00F54C3B /* ViewController.swift in Sources */,
+				CEC0F19B1C3C097600F54C3B /* CompatAlert.swift in Sources */,
 				CEC0F17A1C3C091D00F54C3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +339,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CompatAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.CompatAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,7 +352,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CompatAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AaoIi.CompatAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +404,7 @@
 				CEC0F1951C3C091D00F54C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEC0F1961C3C091D00F54C3B /* Build configuration list for PBXNativeTarget "CompatAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +413,7 @@
 				CEC0F1981C3C091D00F54C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
