@@ -8,7 +8,7 @@ CompatAlert is an alert comes in handy when your app supports IOS 7+, CompatAler
 
 ## How to use CompatAlert ##
 ##### 1) import ```CompatAlert.swift``` into your project <br/>
-#####2) Show Alert:<br/><br/>     2.1) Without Action: buttonTitleYes should be empty string and the tag could be any integer and will not be checked, be default pass 0 <br/>
+#####2) Show Alert:<br/><br/>     2.1) Without Action: buttonTitleYes should be empty string and the tag could be any integer and will not be checked, by default pass 0 <br/>
 
 ``CompatAlert.instance.showAlert("Sorry", message: "This is just a simple message !", buttonTitleYes: "", buttonTitleCancel: "OK", controller: self, tag: 0)``
 
