@@ -93,6 +93,7 @@ class CompatAlert: NSObject,UIAlertViewDelegate {
                 break;
                 
             default:
+                print("default")
                 break;
             }
         }
